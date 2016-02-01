@@ -21,8 +21,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Substring", "SubstringLengt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "length", "length\length.csproj", "{114FEEEB-BB6D-4140-8AC8-8BDB2A29BC58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EscapeSequences", "EscapeSequences\EscapeSequences.csproj", "{47A3114A-1610-4FCE-A8F5-D67650921730}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,10 +63,6 @@ Global
 		{114FEEEB-BB6D-4140-8AC8-8BDB2A29BC58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{114FEEEB-BB6D-4140-8AC8-8BDB2A29BC58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{114FEEEB-BB6D-4140-8AC8-8BDB2A29BC58}.Release|Any CPU.Build.0 = Release|Any CPU
-		{47A3114A-1610-4FCE-A8F5-D67650921730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{47A3114A-1610-4FCE-A8F5-D67650921730}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{47A3114A-1610-4FCE-A8F5-D67650921730}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{47A3114A-1610-4FCE-A8F5-D67650921730}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
