@@ -10,35 +10,31 @@ namespace AMoperation
     {
         static void Main(string[] args)
         {
-            float x, y, result;
-            Char option;
-            Console.Write("Enter the first number: ");
-            x = Convert.ToSingle(Console.ReadLine());
-            Console.Write("Enter the second number: ");
-            y = Convert.ToSingle(Console.ReadLine());
-            Console.WriteLine("Main Menu");
-            Console.WriteLine("1. Addition");
-            Console.WriteLine("2. Subtraction");
-            Console.WriteLine("3. Multiplication");
-            Console.WriteLine("4. Division");
-            Console.Write("Enter the Operation you want to perform : ");
-            option = Convert.ToChar(Console.ReadLine());
+            int x, y;
+            float result;
+            string option;
+            Console.Write("Enter Number 1: ");
+            x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter Number 2: ");
+            y = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Operation: ");
+            option =Console.ReadLine();
             switch (option)
             {
-                case '1':
+                case "Add":
                     result = x + y;
                     Console.WriteLine("The result of Addition is : {0}", result);
                     break;
-                case '2':
+                case "Subtract":
                     result = x - y;
                     Console.WriteLine("The result of Subtraction is : {0}", result);
                     break;
-                case '3':
+                case "Multiply":
                     result = x * y;
                     Console.WriteLine("The result of Multiplication is : {0}", result);
                     break;
-                case '4':
-                    result = x / y;
+                case "Divide":
+                    result = (float)x / y;
                     Console.WriteLine("The result of Division is : {0}", result);
                     break;
                 default:
