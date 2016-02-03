@@ -24,8 +24,7 @@ namespace AMoperation
                 case "Add":
                     result = x + y;
                     Console.WriteLine("The result of Addition is : {0}", result);
-                    break;
-                case "Subtract":
+                  case "Subtract":
                     result = x - y;
                     Console.WriteLine("The result of Subtraction is : {0}", result);
                     break;
