@@ -13,37 +13,42 @@ namespace FibonacciSeries
             int x = 0;
             int y = 1;
             int z;
-            Console.WriteLine("Enter Starting Number: ");
+            Console.Write("\nEnter Starting Number: ");
             int StartingNumber = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter Ending Number: ");
-            int EndingNumber=Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Fibonacci series is : ");
+            Console.Write("\nEnter Ending Number: ");
+            int EndingNumber = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\nFibonacci series is : ");
             if (StartingNumber == 0)
-                {
-                Console.WriteLine(x);
-            }
-            if (StartingNumber == 1)
             {
+                Console.WriteLine(x);
                 Console.WriteLine(y);
             }
-            else
-            {
-                Console.WriteLine(StartingNumber);
+            if (StartingNumber == 1)
+            {                
+                Console.WriteLine(y);
             }
 
-            for (int i = StartingNumber; i < EndingNumber; i++)
+            for (int i = 0; i < EndingNumber; i++)
             {
                 z = x + y;
                 x = y;
                 y = z;
-                if (z>= StartingNumber && z > EndingNumber)
+
+                if (z > EndingNumber)
                 {
                     break;
                 }
-               
-                Console.WriteLine(z);
-            }
 
+                if (z >= StartingNumber)
+                {
+                    Console.WriteLine(z);
+                }
+
+                //if (z >= StartingNumber && z <= EndingNumber)
+                //{
+                //    Console.WriteLine(z);
+                //}
+            }
         }
     }
 }
