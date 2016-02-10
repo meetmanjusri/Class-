@@ -13,6 +13,7 @@ namespace AddandMultiplication
             int result;
             int inputnum;
             string Add, Multiply;
+
             if (result == 0)
             {
                 Console.WriteLine("Operation :" + Add);
@@ -27,6 +28,7 @@ namespace AddandMultiplication
 
             Console.WriteLine(result);
         }
+            
             if (result == 1)
             {
                 Console.WriteLine("Operation :" + Multiply);
