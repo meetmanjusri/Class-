@@ -14,7 +14,7 @@ namespace _5Multipleof3
 
 
             for (int i = 1; true; i++)
-            { 
+            {
                 int n = 0;
                 string x;
                 Console.Write("Please enter a number. (enter Q to exit) :");
@@ -27,30 +27,30 @@ namespace _5Multipleof3
                 }
                 else
 
-                { 
-                n = Convert.ToInt32(x);
+                {
+                    n = Convert.ToInt32(x);
 
 
-                    if  ((n % 30 == 0))
+                    if ((n % 30 == 0))
                     {
-                        
-                        Console.WriteLine(n  + "  is a multiple of 3,15 and 30");
+
+                        Console.WriteLine(n + "  is a multiple of 3,15 and 30");
 
                     }
 
                     else if (n % 3 == 0 && n % 15 == 0)
                     {
-                        
-                        Console.WriteLine(n  + "  is a multiple of 3 and 15");
-                    } 
+
+                        Console.WriteLine(n + "  is a multiple of 3 and 15");
+                    }
                     else if ((n % 3 == 0))
                     {
-                        
-                        Console.WriteLine(n  + "  is a multiple of 3");
+
+                        Console.WriteLine(n + "  is a multiple of 3");
                     }
                     else
                     {
-                        Console.WriteLine(n  + "  is not a multiple of 3,15 and 30");
+                        Console.WriteLine(n + "  is not a multiple of 3,15 and 30");
                     }
                     Console.ReadLine();
                 }
