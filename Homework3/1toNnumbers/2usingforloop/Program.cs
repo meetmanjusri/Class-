@@ -4,24 +4,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _1toNnumbers
+namespace _2usingforloop
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int i = 1;
+
+            int n;
             Console.Write("Please enter a number to exit :");
-            int n = Convert.ToInt32(Console.ReadLine());
-            while ( i <=n)
+            n = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; true; i++)
             {
-                Console.Write(i++);
-                if (i < n + 1)
+               
+                Console.Write(i);
+                if (i < n)
                     Console.Write(",");
-                if (i == n + 1)
+                if (i == n)
                     Console.Write(".");
+                if (i == n)
+                    break;
+
             }
-            Console.ReadLine();
+
         }
     }
 }
