@@ -33,7 +33,7 @@ namespace _3.PalindromeOrNot
                 }
                 if (inputname == "Q")
                 {
-                    Console.WriteLine("Thank you Bye Bye");
+                    Console.WriteLine("Thank you! Bye Bye");
                     break;
                 }
             }
