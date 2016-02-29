@@ -12,18 +12,7 @@ namespace Solution_1
         public Square()
         {
             Console.Write("Please enter the length of one side of the Square : ");
-            while (true)
-            {
-                string strInput = Console.ReadLine();
-                var isSuccess = double.TryParse(strInput, out l);
-                if (isSuccess)
-                    break;
-                else
-                {
-                    Console.Write("Value entered is not a number. Please retry again: ");
-                }
-
-            }
+            l = UserInput.AcceptNumberInput();
         }
         public void PrintArea()
         { 

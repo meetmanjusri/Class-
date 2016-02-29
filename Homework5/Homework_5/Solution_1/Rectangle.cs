@@ -12,30 +12,9 @@ namespace Solution_1
         public Rectangle()
         {
             Console.Write("Please enter the length of the Rectangle : ");
-            while (true)
-            {
-                string strInput = Console.ReadLine();
-                var isSuccess = double.TryParse(strInput, out l);
-                if (isSuccess)
-                    break;
-                else
-                {
-                    Console.Write("Value entered is not a number. Please retry again: ");
-                }
-
-            }
+            l = UserInput.AcceptNumberInput();
             Console.Write("Please enter the breadth of the Rectangle : ");
-            while (true)
-            {
-                string strInput = Console.ReadLine();
-                var isSuccess = double.TryParse(strInput, out b);
-                if (isSuccess)
-                    break;
-                else
-                {
-                    Console.Write("Value entered is not a number. Please retry again: ");
-                }
-            }
+            b = UserInput.AcceptNumberInput();
         }
         public void PrintArea()
         {
