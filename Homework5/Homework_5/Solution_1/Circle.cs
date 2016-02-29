@@ -8,15 +8,25 @@ namespace Solution_1
 {
     class Circle
     {
-        private int r;
+        private double r;
         public Circle()
         {
             Console.Write("Please enter the radius of the circle : ");
-            r = Convert.ToInt32(Console.ReadLine());
+            while (true)
+            {
+                string strInput = Console.ReadLine();
+                var isSuccess = double.TryParse(strInput, out r);
+                if (isSuccess)
+                    break;
+                else
+                {
+                    Console.Write("Value entered is not a number. Please retry again: ");
+                }
+            }
         }
         public void PrintArea()
         {
-            Double a = (3.14) * r * r;
+            double a = (double) Math.PI * r * r;
             Console.WriteLine("Area of Circle : " + a);
         }
     }

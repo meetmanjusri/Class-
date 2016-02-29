@@ -8,15 +8,26 @@ namespace Solution_1
 {
     class Square
     {
-        private int l;
+        private double l;
         public Square()
-        { 
+        {
             Console.Write("Please enter the length of one side of the Square : ");
-            l = Convert.ToInt32(Console.ReadLine());
+            while (true)
+            {
+                string strInput = Console.ReadLine();
+                var isSuccess = double.TryParse(strInput, out l);
+                if (isSuccess)
+                    break;
+                else
+                {
+                    Console.Write("Value entered is not a number. Please retry again: ");
+                }
+
+            }
         }
         public void PrintArea()
         { 
-            int a = l * l;
+            double a = l * l;
             Console.WriteLine("Area of Square : " + a);
         }
     }

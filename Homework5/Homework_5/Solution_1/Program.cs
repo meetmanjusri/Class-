@@ -16,41 +16,41 @@ namespace Solution_1
             {
                 Console.Write("Please enter an option : Circle / Square / Rectangle / Triangle / Quit : ");
                 string strInput = Console.ReadLine();
-                string strToLower = strInput.ToLower();
-                if (strInput == "circle")
+                if (strInput.ToLower() == "circle")
                 {
-                    Circle Circle1 = new Circle();
-                    Circle1.PrintArea();
-                    break;
+                    Circle circle1 = new Circle();
+                    circle1.PrintArea();
+
                 }
-                else if (strInput == "square")
+                else if (strInput.ToLower() == "square")
                 {
-                    Square Square1 = new Square();
-                    Square1.PrintArea();
-                    break;
+                    Square square1 = new Square();
+                    square1.PrintArea();
+
                 }
-                else if (strInput == "rectangle")
+                else if (strInput.ToLower() == "rectangle")
                 {
-                    Rectangle Rectangle1 = new Rectangle();
-                    Rectangle1.PrintArea();
-                    break;
+                    Rectangle rectangle1 = new Rectangle();
+                    rectangle1.PrintArea();
+
                 }
-                else if (strInput == "triangle")
+                else if (strInput.ToLower() == "triangle")
                 {
-                    Triangle Triangle1 = new Triangle();
-                    Triangle1.PrintArea();
-                    break;
+                    Triangle triangle1 = new Triangle();
+                    triangle1.PrintArea();
+
                 }
-                else if(strInput == "quit")
+                else if (strInput.ToLower() == "quit")
                 {
-                   
+
                     break;
                 }
                 else
                 {
-                    Console.Write("Please select a valid option.");
-                    break;
+                    Console.WriteLine("Please select a valid option.");
+
                 }
+
             }
         }
     }

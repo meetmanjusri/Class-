@@ -8,17 +8,39 @@ namespace Solution_1
 {
     class Triangle
     {
-        private int b,h;
+        private double b,h;
         public Triangle()
         {
             Console.Write("Please enter the base of the Triangle : ");
-            b = Convert.ToInt32(Console.ReadLine());
+            while (true)
+            {
+                string strInput = Console.ReadLine();
+                var isSuccess = double.TryParse(strInput, out b);
+                if (isSuccess)
+                    break;
+                else
+                {
+                    Console.Write("Value entered is not a number. Please retry again: ");
+                }
+
+            }
             Console.Write("Please enter the height of the Triangle : ");
-            h = Convert.ToInt32(Console.ReadLine());
+            while (true)
+            {
+                string strInput = Console.ReadLine();
+                var isSuccess = double.TryParse(strInput, out h);
+                if (isSuccess)
+                    break;
+                else
+                {
+                    Console.Write("Value entered is not a number. Please retry again: ");
+                }
+
+            }
         }
         public void PrintArea()
         {
-            int a = (b * h) / 2;
+            double a = (b * h) / 2;
             Console.WriteLine("Area of Triangle : " + a);
         }
 
