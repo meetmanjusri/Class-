@@ -13,7 +13,7 @@ namespace Solution_1
         {
             while (true)
             {
-                Console.Write("Please enter the type of vehicle(Bike / Car / Train / Plane / Quit : ");
+                Console.Write("Please enter the type of vehicle (Bike / Car / Train / Plane / Quit) : ");
                 string strInput = Console.ReadLine();
                 if (strInput.ToLower() == "bike")
                     Console.WriteLine(Bike.show);

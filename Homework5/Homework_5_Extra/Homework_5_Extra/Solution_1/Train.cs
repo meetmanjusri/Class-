@@ -8,6 +8,7 @@ namespace Solution_1
 {
     class Train
     {
-        public static string show = "Hi. I am a Train. I am used for mass transport and i travel on tracks. ";
+        //public static string show = "Hi. I am a Train. I am used for mass transport and i travel on tracks. ";
+        public static string show { get; set; } = "Hi. I am a Train. I am used for mass transport and i travel on tracks. ";
     }
 }

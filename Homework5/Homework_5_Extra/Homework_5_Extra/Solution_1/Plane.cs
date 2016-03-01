@@ -8,6 +8,7 @@ namespace Solution_1
 {
     class Plane
     {
-        public static string show = "Hi. I am a Plane. I am used for mass transport and i can fly. ";
+        //public static string show = "Hi. I am a Plane. I am used for mass transport and i can fly. ";
+        public static string show { get; set; }= "Hi. I am a Plane. I am used for mass transport and i can fly. ";
     }
 }
