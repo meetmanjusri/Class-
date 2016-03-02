@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Remoting.Services;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Solution_1
+namespace Solution_2
 {
     class Program
     {
@@ -13,16 +12,18 @@ namespace Solution_1
         {
             while (true)
             {
-                Console.Write("Please enter the type of vehicle (Bike / Car / Train / Plane / Quit) : ");
+                Console.Write("Please enter the type of shape (Circle / Square / Quit): ");
                 string strInput = Console.ReadLine();
-                if (strInput.ToLower() == "bike")
-                    Console.WriteLine(Bike.Show);
-                else if (strInput.ToLower() == "car")
-                    Console.WriteLine(Car.Show);
-                else if (strInput.ToLower() == "train")
-                    Console.WriteLine(Train.Show);
-                else if (strInput.ToLower() == "plane")
-                    Console.WriteLine(Plane.Show);
+                if (strInput.ToLower() == "circle")
+                {
+                    Circle circle1 = new Circle();
+                    circle1.PrintAreaOrDimension();
+                }
+                else if (strInput.ToLower() == "square")
+                {
+                    Square square1 = new Square();
+                    square1.PrintAreaOrDimension();
+                }
                 else if (strInput.ToLower() == "quit")
                 {
                     Console.WriteLine("Bye Bye");
@@ -36,3 +37,4 @@ namespace Solution_1
         }
     }
 }
+
