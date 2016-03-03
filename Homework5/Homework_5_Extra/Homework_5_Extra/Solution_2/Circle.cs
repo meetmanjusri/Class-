@@ -12,25 +12,26 @@ namespace Solution_2
     {
         private double area, dimension;
         private string strInput;
+
         public Circle()
         {
-                Console.Write("Type of value being entered (Dimension / Area): ");
-                strInput = Console.ReadLine();
-                if (strInput.ToLower() == "area")
-                {
-                    Console.Write("Enter the area of circle: ");
-                    area = UserInput.AcceptNumberInput();
-                }
-                else if (strInput.ToLower() == "dimension")
-                {
-                    Console.Write("Enter the dimension of circle : ");
-                    dimension = UserInput.AcceptNumberInput();
-                }
-                else
-                {
-                    Console.WriteLine("Please enter a valid option.");
-                }
-         }
+            Console.Write("Type of value being entered (Dimension / Area): ");
+            strInput = Console.ReadLine();
+            if (strInput.ToLower() == "area")
+            {
+                Console.Write("Enter the area of circle: ");
+                area = UserInput.AcceptNumberInput();
+            }
+            else if (strInput.ToLower() == "dimension")
+            {
+                Console.Write("Enter the dimension of circle : ");
+                dimension = UserInput.AcceptNumberInput();
+            }
+            else
+            {
+                Console.WriteLine("Please enter a valid option.");
+            }
+        }
         public void PrintAreaOrDimension()
         {
             if (strInput.ToLower() == "area")
