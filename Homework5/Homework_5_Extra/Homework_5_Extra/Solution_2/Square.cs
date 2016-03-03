@@ -16,13 +16,13 @@ namespace Solution_2
             strInput = Console.ReadLine();
             if (strInput.ToLower() == "area")
             {
-                Console.Write("Please enter the length of side of a square: ");
-                dimension = UserInput.AcceptNumberInput();
+                Console.Write("Please enter the area of a square: ");
+                area = UserInput.AcceptNumberInput();
             }
             else if (strInput.ToLower() == "dimension")
             {
                 Console.Write("Please enter the length of side of a square: ");
-                area = UserInput.AcceptNumberInput();
+                dimension = UserInput.AcceptNumberInput();
             }
             else
             {
@@ -33,13 +33,13 @@ namespace Solution_2
         {
             if (strInput.ToLower() == "area")
             {
-                area = (double) dimension*dimension;
-                Console.WriteLine("Area of a square : " + area);
+                dimension = (double)(Math.Sqrt(area));
+                Console.WriteLine("Dimension of a square : " + dimension);
             }
             else if (strInput.ToLower() == "dimension")
             {
-                dimension = (double) (Math.Sqrt(area));
-                Console.WriteLine("Dimension of a square : " + dimension);
+                area = (double)dimension * dimension;
+                Console.WriteLine("Area of a square : " + area);
             }
         }
     }

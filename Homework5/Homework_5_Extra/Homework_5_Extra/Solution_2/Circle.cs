@@ -18,13 +18,13 @@ namespace Solution_2
                 strInput = Console.ReadLine();
                 if (strInput.ToLower() == "area")
                 {
-                    Console.Write("Enter the dimension of circle: ");
-                    dimension = UserInput.AcceptNumberInput();
+                    Console.Write("Enter the area of circle: ");
+                    area = UserInput.AcceptNumberInput();
                 }
                 else if (strInput.ToLower() == "dimension")
                 {
-                    Console.Write("Enter the area of circle : ");
-                    area = UserInput.AcceptNumberInput();
+                    Console.Write("Enter the dimension of circle : ");
+                    dimension = UserInput.AcceptNumberInput();
                 }
                 else
                 {
@@ -35,13 +35,13 @@ namespace Solution_2
         {
             if (strInput.ToLower() == "area")
             {
-                area = (double) Math.PI*dimension*dimension;
-                Console.WriteLine("Area of Circle : " + area);
+                dimension = (double)(Math.Sqrt(area / Math.PI));
+                Console.WriteLine("Dimension of circle : " + dimension);
             }
             else if (strInput.ToLower() == "dimension")
             {
-                dimension = (double) (Math.Sqrt(area/Math.PI));
-                Console.WriteLine("Dimension of circle : " + dimension);
+                area = (double)Math.PI * dimension * dimension;
+                Console.WriteLine("Area of Circle : " + area);
             }
         }
     }
