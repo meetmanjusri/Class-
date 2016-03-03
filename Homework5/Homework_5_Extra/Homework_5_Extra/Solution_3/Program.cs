@@ -16,22 +16,22 @@ namespace Solution_3
             while (true)
             {
 
-                Console.WriteLine("Please enter an action (Login / Logoff / Quit) : ");
+                Console.Write("\nPlease enter an action (Login / Logoff / Quit) : ");
 
                 string strInput = Console.ReadLine();
                 {
                     if (strInput == "login")
                     {
-                        Console.WriteLine(LoginService.Login);
+                        Console.Write(LoginService.Login);
                     }
                     else if (strInput == "logoff")
                     {
-                        Console.WriteLine(LoginService.Logoff);
+                        Console.Write(LoginService.Logoff);
                     }
 
                     else if (strInput == "quit")
                     {
-                        Console.WriteLine(LoginService.Quit);
+                        Console.Write(LoginService.Quit);
                     }
                 }
                 
@@ -42,7 +42,7 @@ namespace Solution_3
                     break;
             }
 
-            Console.Write("Thank you! A total of" + count + "users logged in and logged off.", true);
+            Console.WriteLine("Thank you! A total of" + count + "users logged in and logged off.", true);
             
         }
     }
