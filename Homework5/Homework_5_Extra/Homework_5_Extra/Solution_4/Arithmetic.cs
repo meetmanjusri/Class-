@@ -12,12 +12,23 @@ namespace Solution_4
     {
         public double num, square, squareroot, isprime;
         public string strInput;
+
         public Arithmetic()
         {
+
             Console.Write("Please enter a number : ");
             num = UserInput.AcceptNumberInput();
-            Console.WriteLine("Please enter the type of operation(Square / Root / IsPrime) : ");
-            strInput = Console.ReadLine();
+            while (true)
+            {
+                Console.Write("Please enter the type of operation(Square / Root / IsPrime) : ");
+                strInput = Console.ReadLine();
+                if (strInput.ToLower() == "square" || strInput.ToLower() == "root" || strInput.ToLower() == "isprime")
+                    break;
+                else
+                {
+                    Console.WriteLine("Please enter a valid option.");
+                }
+            }
         }
         public void PrintSquareOrSquareRootOrIsPrime()
         {
@@ -36,11 +47,11 @@ namespace Solution_4
                 bool prime = IsPrime.Prime(Int32.Parse(num.ToString()));
                 if (prime)
                 {
-                    Console.Write(num + " is a prime number.");
+                    Console.WriteLine(num + " is a prime number.");
                 }
                 else
                 {
-                    Console.Write(num + " is not a prime number.");
+                    Console.WriteLine(num + " is not a prime number.");
                 }
             }
             else

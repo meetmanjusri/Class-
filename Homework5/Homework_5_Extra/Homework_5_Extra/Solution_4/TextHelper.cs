@@ -14,15 +14,24 @@ namespace Solution_4
         {
             Console.Write("Please enter some text: ");
             strInput = Console.ReadLine();
-            Console.Write("Please enter what you want to count (Char/Vowel): ");
-            strInput1 = Console.ReadLine();
+            while (true)
+            {
+                Console.Write("Please enter what you want to count (Char/Vowel): ");
+                strInput1 = Console.ReadLine();
+                if (strInput1.ToLower() == "char" || strInput1.ToLower() == "vowel")
+                    break;
+                else
+                {
+                    Console.WriteLine("Please enter a valid option.");
+                }
+            }
         }
         public void PrintCharOrVowel()
         {
             if (strInput1.ToLower() == "char")
             {
                 count = strInput.Length;
-                Console.WriteLine("The number of characters in " + strInput + " is " + count);
+                Console.WriteLine("The number of characters in '" + strInput + "' is " + count);
             }
             else if (strInput1.ToLower() == "vowel")
             {
@@ -33,7 +42,7 @@ namespace Solution_4
                         count++;
                     }
                 }
-                Console.WriteLine("The number of vowels in " + strInput + " is " + count);
+                Console.WriteLine("The number of vowels in '" + strInput + "' is " + count);
             }
             else
             {
