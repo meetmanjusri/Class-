@@ -15,8 +15,17 @@ namespace Solution_2
 
         public Circle()
         {
-            Console.Write("Type of value being entered (Dimension / Area): ");
-            strInput = Console.ReadLine();
+            while (true)
+            {
+                Console.Write("Type of value being entered (Dimension / Area): ");
+                strInput = Console.ReadLine();
+                if (strInput.ToLower() == "area" || strInput.ToLower() == "dimension")
+                    break;
+                else
+                {
+                    Console.WriteLine("Please enter a valid option.");
+                }
+            }
             if (strInput.ToLower() == "area")
             {
                 Console.Write("Enter the area of circle: ");
@@ -27,10 +36,7 @@ namespace Solution_2
                 Console.Write("Enter the dimension of circle : ");
                 dimension = UserInput.AcceptNumberInput();
             }
-            else
-            {
-                Console.WriteLine("Please enter a valid option.");
-            }
+           
         }
         public void PrintAreaOrDimension()
         {
